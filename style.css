@@ -1,0 +1,167 @@
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    font-weight: 400;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+#card {
+    background-color: hsl(213, 19%, 18%);
+    color: white;
+    border-radius: 10px;
+    padding: 3% 4% 3% 4%;
+    width: 80%;
+}
+
+#first-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+#star-container {
+    border-radius: 100%;
+    background-color: hsl(213, 23%, 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    max-width: fit-content;
+    margin: 2% 0 2% 0;
+    margin-left: 1%;
+}
+
+#star {
+    height: 10px;
+}
+
+#head {
+    font-weight: 600;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+#core {
+    color: hsl(216, 12%, 54%);
+    font-size: small;
+}
+
+#mark-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+}
+
+#mark {
+    border-radius: 100%;
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(213, 23%, 25%);
+    padding: 5%;
+    margin: 3%;
+    text-align: center;
+    width: 100%;
+    font-size: xx-small;
+}
+
+#mark:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#submit-button {
+    background-color: hsl(25, 97%, 53%);
+    margin: 5%;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 1.5px;
+    padding: 4% 0 4% 0;
+    font-size: small;
+    font-weight: 600;
+}
+
+#submit-button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#mark.selected {
+    background-color: hsl(217, 12%, 63%);
+    color: white;
+}
+
+#second-panel {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 6% 0 6% 0;
+}
+
+#second-core {
+    display: flex;
+    flex-direction: column;
+    color: hsl(216, 12%, 54%);
+    font-size: small;
+}
+
+#thanks-text {
+    font-size: larger;
+}
+
+#selection {
+    margin: 5% 0 5% 0;
+    color: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    background-color: hsl(213, 23%, 25%);
+    padding: 3% 5% 3% 5%;
+    font-size: small;
+}
+
+@media (min-width: 376px) {
+    #card {
+        width: 25%;
+    }
+
+
+    #star {
+        height: 20px;
+    }
+
+    #head {
+        font-size: x-large;
+    }
+
+    #core {
+        font-size: medium;
+    }
+
+    #mark {
+        font-size: medium;
+    }
+
+    #submit-button {
+        font-size: medium;
+    }
+
+    #thanks-text {
+        font-size: xx-large;
+    }
+
+    #second-core {
+        font-size: x-large;
+    }
+
+    #selection {
+        padding: 2% 4% 2% 4%;
+    }
+}
